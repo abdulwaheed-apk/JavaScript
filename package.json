@@ -1,0 +1,25 @@
+{
+  "name": "javascript-practice",
+  "version": "1.0.0",
+  "description": "js language practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulwaheed-apk/JavaScript.git"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "Abdul Waheed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdulwaheed-apk/JavaScript/issues"
+  },
+  "homepage": "https://github.com/abdulwaheed-apk/JavaScript#readme",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
