@@ -4,7 +4,8 @@
   "description": "js language practice",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon dsa.js",
+    "fcc": "nodemon FCC.js"
   },
   "repository": {
     "type": "git",
