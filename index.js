@@ -19,3 +19,31 @@ function miniMaxSum(arr) {
   // function  two args excludeMe, fourArr
 }
 miniMaxSum([1, 7, 20, 6, 5])
+
+function nextCharInAlphabets(inputString) {
+  // Convert the input string to an array of characters
+  const chars = inputString.split('')
+
+  // Map each character to the next one in the English alphabet
+  const result = chars.map((char) => {
+    // Get the Unicode code of the current character
+    let code = char.charCodeAt(0)
+
+    // Check if the current character is a lowercase letter
+    if (code >= 97 && code <= 122) {
+      // Shift the code by 1 and wrap around if it goes beyond 'z'
+      code = ((code - 97 + 1) % 26) + 97
+    }
+    // Check if the current character is an uppercase letter
+    else if (code >= 65 && code <= 90) {
+      // Shift the code by 1 and wrap around if it goes beyond 'Z'
+      code = ((code - 65 + 1) % 26) + 65
+    }
+    // Return the corresponding character
+    return String.fromCharCode(code)
+  })
+
+  // Join the resulting array of characters back into a string
+  return result.join('')
+}
+console.log(nextCharInAlphabets('Acr'))

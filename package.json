@@ -4,9 +4,9 @@
   "description": "js language practice",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon dsa.js",
+    "start": "nodemon index.js",
     "fcc": "nodemon FCC.js",
-    "mdn": "nodemon mdn/Strings.js"
+    "mdn": "nodemon mdn/arrays.js"
   },
   "repository": {
     "type": "git",
