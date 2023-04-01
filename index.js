@@ -11,16 +11,16 @@
 }
 plusMinus([-4, 3, -9, 0, 4, 1]) */
 // * Min Max Sum
-// ? Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+/* // ? Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 function miniMaxSum(arr) {
   //todo Algorithms
   //excludeMe 1: digit to exclude (each integer for once)
   // fourArr 2 : four digits  (new Array with remaining four integers)
   // function  two args excludeMe, fourArr
 }
-miniMaxSum([1, 7, 20, 6, 5])
+miniMaxSum([1, 7, 20, 6, 5]) */
 
-function nextCharInAlphabets(inputString) {
+/* function nextCharInAlphabets(inputString) {
   // Convert the input string to an array of characters
   const chars = inputString.split('')
 
@@ -46,4 +46,61 @@ function nextCharInAlphabets(inputString) {
   // Join the resulting array of characters back into a string
   return result.join('')
 }
-console.log(nextCharInAlphabets('Acr'))
+console.log(nextCharInAlphabets('Acr')) */
+
+// * code wars
+// function findOutlier(integers) {
+//   //your code here
+
+//   // for(let i=0; i<integers.length; i++) {
+//   //   let even = (integers[i]%2 === 0);
+//   //   let odd = (integers[i]%2 !== 0)
+//   //   // if (even === )
+//   //   // console.log(integers[i] , "is even ",even)
+//   //   // console.log(integers[i], odd)
+//   //  console.log(integers.filter(item => item %2 !==0 ))
+//   // }
+//   console.log(integers.filter((item) => item % 2 === 0));
+// }
+// findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]);
+//
+// function positiveSum(arr) {
+//   if(arr.length === 0) return 0
+//   else  {
+//    return arr.filter(item => item >0).reduce((a,b) => a+b)
+//   }
+// }
+//
+// function positiveSum(arr) {
+//   var total = 0;
+//   for (i = 0; i < arr.length; i++) {
+//     // setup loop to go through array of given length
+//     if (arr[i] > 0) {
+//       // if arr[i] is greater than zero
+//       total += arr[i]; // add arr[i] to total
+//     }
+//   }
+//   return total; // return total
+// }
+// console.log(positiveSum([1, -4, 6, 7, 5, 3]));
+// function solution(str) {
+//   return [...str].reverse().join('');
+// }
+// console.log(solution('World'));
+//
+// function removeChar(str) {
+//   //You got this!
+//   return str.slice(1, str.length - 1);
+// }
+// console.log(removeChar('eloquentff'));
+//
+function squareSum(numbers) {
+  let square = []
+  let sum = 0
+  for (let i = 0; i < numbers.length; i++) {
+    square.push(numbers[i] * numbers[i])
+  }
+  for (let i = 0; i < square.length; i++) sum += square[i]
+  return sum
+}
+console.log(squareSum([1, 2, 2]))

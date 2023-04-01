@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "fccPrep": "nodemon FreeCodeCamp/CodingInterviewPrep/Algorithms/index.js",
     "fcc": "nodemon FCC.js",
-    "mdn": "nodemon mdn/arrays.js"
+    "mdn": "nodemon mdn/arrays.js",
+    "leet": "nodemon LeetCode/index.js"
   },
   "repository": {
     "type": "git",
