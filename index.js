@@ -63,14 +63,14 @@ console.log(nextCharInAlphabets('Acr')) */
 //   console.log(integers.filter((item) => item % 2 === 0));
 // }
 // findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]);
-//
+//!
 // function positiveSum(arr) {
 //   if(arr.length === 0) return 0
 //   else  {
 //    return arr.filter(item => item >0).reduce((a,b) => a+b)
 //   }
 // }
-//
+//!
 // function positiveSum(arr) {
 //   var total = 0;
 //   for (i = 0; i < arr.length; i++) {
@@ -83,18 +83,19 @@ console.log(nextCharInAlphabets('Acr')) */
 //   return total; // return total
 // }
 // console.log(positiveSum([1, -4, 6, 7, 5, 3]));
+// !
 // function solution(str) {
 //   return [...str].reverse().join('');
 // }
 // console.log(solution('World'));
-//
+//!
 // function removeChar(str) {
 //   //You got this!
 //   return str.slice(1, str.length - 1);
 // }
 // console.log(removeChar('eloquentff'));
-//
-function squareSum(numbers) {
+//!
+/* function squareSum(numbers) {
   let square = []
   let sum = 0
   for (let i = 0; i < numbers.length; i++) {
@@ -104,3 +105,92 @@ function squareSum(numbers) {
   return sum
 }
 console.log(squareSum([1, 2, 2]))
+ */
+//!
+/* function noSpace(x) {
+  return x.split(' ').join('')
+}
+
+console.log(noSpace('Hello There')) */
+//!
+/* function findSmallestInt(args) {
+  // let arr = args.sort((a, b) => b - a)
+  // return arr.pop()
+  return Math.min(...args)
+}
+console.log(findSmallestInt([34, -345, -1, 100]))
+ */
+//!
+/* function countSheep(arrayOfSheep) {
+  // TODO May the force be with you
+  //   let presentSheep = ['yes me']
+  //   for (let i = 0; i < arrayOfSheep.length; i++) {
+  //     presentSheep.push(arrayOfSheep[i] === true)
+  //     // console.log(arrayOfSheep[i] === true)
+  //   }
+  //   return presentSheep.filter((item) => item === true).length
+  return arrayOfSheep.filter(Boolean).length
+}
+console.log(
+  countSheep([
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+  ])
+)
+ */
+// !
+/* function basicOp(operation, value1, value2) {
+  // Code
+  // return eval(`${value1} ${operation} ${value2}`)
+  switch (operation) {
+    case '+':
+      return value1 + value2
+      break
+    case '-':
+      return value1 - value2
+      break
+    case '*':
+      return value1 * value2
+      break
+    case '/':
+      return value1 / value2
+      break
+    default:
+      return 0
+  }
+}
+console.log(basicOp('-', 15, 18)) */
+// !
+function century(year) {
+  // Finish this :)
+  // let century = Math.floor(year / 100)
+  // if (year % 100 > 0) {
+  //   century++
+  // }
+  // return century
+  // return Math.floor((year + 99) / 100)
+  return Math.ceil(year / 100)
+}
+console.log(century(1901))
