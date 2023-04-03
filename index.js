@@ -213,23 +213,36 @@ function abbrevName(name) {
 }
 console.log(abbrevName('Sam Harris')) */
 //!
-// Vowel Count
+/* // Vowel Count
 function getCount(str) {
-  /* let arr1 = str.split('')
-  let arr2 = []
-  for (let i = 0; i < arr1.length; i++) {
-    if (
-      arr1[i] === 'a' ||
-      arr1[i] === 'e' ||
-      arr1[i] === 'i' ||
-      arr1[i] === 'o' ||
-      arr1[i] === 'u'
-    ) {
-      arr2.push(arr1[i])
-    }
-  }
-  return arr2.length */
+  // let arr1 = str.split('')
+  // let arr2 = []
+  // for (let i = 0; i < arr1.length; i++) {
+  //   if (
+  //     arr1[i] === 'a' ||
+  //     arr1[i] === 'e' ||
+  //     arr1[i] === 'i' ||
+  //     arr1[i] === 'o' ||
+  //     arr1[i] === 'u'
+  //   ) {
+  //     arr2.push(arr1[i])
+  //   }
+  // }
+  // return arr2.length 
   return (str.match(/[aeiou]/gi) || []).length
 }
-console.log(getCount('abracadaeia'))
-// 5
+console.log(getCount('abracadaeia')) */
+// !
+function disemvowel(str) {
+  /*  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  const words = str.split(' ')
+
+  const disemvoweledWords = words.map((word) =>
+    [...word].filter((char) => !vowels.includes(char)).join('')
+  )
+
+  return disemvoweledWords.join(' ') */
+  return str.replace(/[aeiou]/gi, '')
+}
+console.log(disemvowel('This website is for losers LOL!'))
+// Ts wbst s fr lsrs LL!
