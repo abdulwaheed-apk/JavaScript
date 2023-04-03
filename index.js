@@ -183,7 +183,7 @@ console.log(
 }
 console.log(basicOp('-', 15, 18)) */
 // !
-function century(year) {
+/* function century(year) {
   // Finish this :)
   // let century = Math.floor(year / 100)
   // if (year % 100 > 0) {
@@ -194,3 +194,42 @@ function century(year) {
   return Math.ceil(year / 100)
 }
 console.log(century(1901))
+ */
+// !
+/* // Nathan loves cycling.
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+function litres(time) {
+  return Math.trunc(time / 2)
+}
+console.log(litres(12.3))
+ */
+// !
+/* // Abbreviate a Two Word Name
+function abbrevName(name) {
+  // code away
+  let arr = name.split(' ')
+  return arr[0][0].toUpperCase() + '.' + arr[1][0].toUpperCase()
+}
+console.log(abbrevName('Sam Harris')) */
+//!
+// Vowel Count
+function getCount(str) {
+  /* let arr1 = str.split('')
+  let arr2 = []
+  for (let i = 0; i < arr1.length; i++) {
+    if (
+      arr1[i] === 'a' ||
+      arr1[i] === 'e' ||
+      arr1[i] === 'i' ||
+      arr1[i] === 'o' ||
+      arr1[i] === 'u'
+    ) {
+      arr2.push(arr1[i])
+    }
+  }
+  return arr2.length */
+  return (str.match(/[aeiou]/gi) || []).length
+}
+console.log(getCount('abracadaeia'))
+// 5

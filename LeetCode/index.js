@@ -1,5 +1,5 @@
 //? 1. Two Sum
-var twoSum = function (nums, target) {
+/* var twoSum = function (nums, target) {
   //return indices of the two numbers such that they add up to target.
   // * Algo
   // sort array assenting
@@ -8,19 +8,19 @@ var twoSum = function (nums, target) {
   //iterate through new array
   //in iteration apply recursive function that calculate sum of current index and next index
   //  break when num[current] + num[next] === target , get index and return in array i.e. current and next
-  nums.sort((a, b) => a - b)
-  /* let middle = nums.length / 2
-  console.log(middle)
-  if (nums[middle] >= target) {
-    console.log(nums)
-    let newArr = nums.slice(0, middle)
-    console.log(newArr)
-  }
-  if (nums[middle] < target) {
-    let newMiddle = nums.length - 1 - middle
-    // console.log(newMiddle)
-    // console.log(nums[newMiddle])
-  } */
+  // nums.sort((a, b) => a - b)
+  // let middle = nums.length / 2
+  // console.log(middle)
+  // if (nums[middle] >= target) {
+  //   console.log(nums)
+  //   let newArr = nums.slice(0, middle)
+  //   console.log(newArr)
+  // }
+  // if (nums[middle] < target) {
+  //   let newMiddle = nums.length - 1 - middle
+  //   // console.log(newMiddle)
+  //   // console.log(nums[newMiddle])
+  // } 
 
   let index = nums.indexOf(nums.find((elem) => elem >= target))
   //   let elemIndex = nums.indexOf(element)
@@ -40,3 +40,9 @@ var twoSum = function (nums, target) {
 }
 
 twoSum([2, 7, 5, 11, 15], 9)
+ */
+// !
+var removeDuplicates = function (nums) {
+  return nums.filter((item, index) => arr.indexOf(item) === index)
+}
+console.log(removeDuplicates([1, 2, 3, 1]))
