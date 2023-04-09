@@ -233,16 +233,42 @@ function getCount(str) {
 }
 console.log(getCount('abracadaeia')) */
 // !
-function disemvowel(str) {
-  /*  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-  const words = str.split(' ')
+/* function disemvowel(str) {
+  //  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  // const words = str.split(' ')
 
-  const disemvoweledWords = words.map((word) =>
-    [...word].filter((char) => !vowels.includes(char)).join('')
-  )
+  // const disemvoweledWords = words.map((word) =>
+  //   [...word].filter((char) => !vowels.includes(char)).join('')
+  // )
 
-  return disemvoweledWords.join(' ') */
+  // return disemvoweledWords.join(' ') 
   return str.replace(/[aeiou]/gi, '')
 }
 console.log(disemvowel('This website is for losers LOL!'))
-// Ts wbst s fr lsrs LL!
+// Ts wbst s fr lsrs LL! */
+// !
+/* function squareDigits(num) {
+  let numStr = num.toString()
+  let arr = []
+  numStr.split('').forEach((item) => arr.push(Math.pow(item, 2)))
+  return Number(arr.join(''))
+}
+console.log(squareDigits(3212)) */
+// !
+/* function highAndLow(numbers) {
+  let arr = numbers.split(' ').sort((a, b) => b - a)
+  return String(`${arr[0]} ${arr[arr.length - 1]}`)
+}
+console.log(highAndLow('1 2 -3 4 5')) */
+// !
+/* // Descending Order
+function descendingOrder(n) {
+  //...
+  // let res = String(n)
+  //   .split('')
+  //   .sort((a, b) => b - a)
+  //   .join('')
+  // return typeof Number(res)
+  return parseInt(String(n).split('').sort().reverse().join(''))
+}
+console.log(descendingOrder(42145)) */
