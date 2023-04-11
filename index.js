@@ -272,3 +272,58 @@ function descendingOrder(n) {
   return parseInt(String(n).split('').sort().reverse().join(''))
 }
 console.log(descendingOrder(42145)) */
+// !
+/* // Get the Middle Character
+function getMiddle(s) {
+  //Code goes here!
+  let res
+  if (s.length % 2 !== 0) {
+    const index = Math.floor((0 + s.length) / 2)
+    res = s.split('')[index]
+  } else if (s.length % 2 === 0) {
+    const index = Math.floor((0 + s.length - 1) / 2)
+    res = s.split('')[index] + s.split('')[index + 1]
+  }
+  return res
+}
+console.log(getMiddle('test')) */
+// !
+/* function accum(s) {
+  return s
+    .toLowerCase()
+    .split('')
+    .map((item, index) => item.toUpperCase() + item.repeat(index))
+    .join('-')
+}
+console.log(accum('aBcd'))
+ */
+// !
+/* var isSquare = function (n) {
+  return Math.sqrt(n) % 1 === 0
+}
+console.log(isSquare(26)) */
+// !
+/* function filter_list(l) {
+  return l
+    .map((item) => typeof item === 'number' && item)
+    .filter((item) => item !== false)
+}
+console.log(filter_list([1, 'a', 'b', 0, 15])) */
+// !
+/* function isIsogram(str) {
+  // let arr = str.toLowerCase().split('')
+  // return arr.length === new Set(arr).size
+  return new Set(str.toUpperCase()).size === str.length
+}
+console.log(isIsogram('moOse')) */
+// !
+function XO(str) {
+  let arr = str.toLowerCase().split('')
+  let xArr = []
+  let oArr = []
+  arr.forEach((item) =>
+    item === 'x' ? xArr.push(item) : item === 'o' ? oArr.push(item) : null
+  )
+  return xArr.length === oArr.length
+}
+console.log(XO('ooxXm'))

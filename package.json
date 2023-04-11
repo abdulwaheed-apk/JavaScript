@@ -8,7 +8,8 @@
     "fccPrep": "nodemon FreeCodeCamp/CodingInterviewPrep/Algorithms/index.js",
     "fcc": "nodemon FCC.js",
     "mdn": "nodemon mdn/arrays.js",
-    "leet": "nodemon LeetCode/index.js"
+    "leet": "nodemon LeetCode/index.js",
+    "hacker": "nodemon hackerRank.js"
   },
   "repository": {
     "type": "git",
