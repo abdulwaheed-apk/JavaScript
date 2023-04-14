@@ -42,7 +42,22 @@
 twoSum([2, 7, 5, 11, 15], 9)
  */
 // !
-var removeDuplicates = function (nums) {
-  return nums.filter((item, index) => arr.indexOf(item) === index)
+/* var removeDuplicates = function (nums) {
+  for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] === nums[i + 1]) {
+      nums.splice(i + 1, 1)
+      i--
+    }
+  }
+
+  return nums.length
 }
-console.log(removeDuplicates([1, 2, 3, 1]))
+console.log(removeDuplicates([1, 1, 2])) */
+// !
+/* var mergeTwoLists = function (list1, list2) {
+  let arr = list1.concat(list2).sort()
+  return arr
+}
+
+// Input: list1 = [1,2,4], list2 = [1,3,4]  Output: [1,1,2,3,4,4]
+console.log(mergeTwoLists([1, 2, 4], [1, 3, 4])) */

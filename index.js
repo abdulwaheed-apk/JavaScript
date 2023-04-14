@@ -317,7 +317,7 @@ console.log(filter_list([1, 'a', 'b', 0, 15])) */
 }
 console.log(isIsogram('moOse')) */
 // !
-function XO(str) {
+/* function XO(str) {
   let arr = str.toLowerCase().split('')
   let xArr = []
   let oArr = []
@@ -326,4 +326,17 @@ function XO(str) {
   )
   return xArr.length === oArr.length
 }
-console.log(XO('ooxXm'))
+console.log(XO('ooxXm')) */
+// !
+/* function findShort(s) {
+  return Math.min(...s.split(' ').map((item) => item.length))
+}
+console.log(findShort('ProofOfStake 21inc Ethereum 21inc Monero Waves')) */
+// !
+String.prototype.toJadenCase = function () {
+  //...
+  return this.split(' ')
+    .map((item) => item.charAt(0).toUpperCase() + item.substring(1))
+    .join(' ')
+}
+console.log('abc df  thyjuk hyuj'.toJadenCase())

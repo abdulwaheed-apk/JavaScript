@@ -9,6 +9,7 @@
     "fcc": "nodemon FCC.js",
     "mdn": "nodemon mdn/arrays.js",
     "leet": "nodemon LeetCode/index.js",
+    "imp": "nodemon dsa.js",
     "hacker": "nodemon hackerRank.js"
   },
   "repository": {
