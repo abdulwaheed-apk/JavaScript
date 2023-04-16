@@ -333,10 +333,25 @@ console.log(XO('ooxXm')) */
 }
 console.log(findShort('ProofOfStake 21inc Ethereum 21inc Monero Waves')) */
 // !
-String.prototype.toJadenCase = function () {
+/* String.prototype.toJadenCase = function () {
   //...
   return this.split(' ')
     .map((item) => item.charAt(0).toUpperCase() + item.substring(1))
     .join(' ')
 }
 console.log('abc df  thyjuk hyuj'.toJadenCase())
+ */
+// !
+//** Kyu 6 started */
+function solution(number) {
+  //
+  if (number <= 0) return 0
+  let sum = 0
+  for (let num = 1; num < number; num++) {
+    if (num % 5 === 0 || num % 3 === 0) {
+      sum += num
+    }
+  }
+  return sum
+}
+console.log(solution(10), 23)
