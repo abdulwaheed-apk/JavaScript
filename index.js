@@ -343,7 +343,7 @@ console.log('abc df  thyjuk hyuj'.toJadenCase())
  */
 // !
 //** Kyu 6 started */
-function solution(number) {
+/* function solution(number) {
   //
   if (number <= 0) return 0
   let sum = 0
@@ -354,4 +354,27 @@ function solution(number) {
   }
   return sum
 }
-console.log(solution(10), 23)
+console.log(solution(10), 23) */
+// !
+/* function spinWords(string) {
+  //TODO Have fun :)
+  return string
+    .split(' ')
+    .map((item) =>
+      item.length >= 5
+        ? item
+            .split(' ')
+            .map((item) => item.split('').reverse().join(''))
+            .join('')
+        : item
+    )
+    .join(' ')
+}
+console.log(spinWords('Just kidding there is still one more')) */
+// !
+function findOdd(A) {
+  //happy coding!
+  let newArr = []
+  return newArr
+}
+console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]))
