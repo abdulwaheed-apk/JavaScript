@@ -54,11 +54,30 @@ console.log(plusMinus([1, 1, 0, -1, -1])) */
 }
 console.log(miniMaxSum([1, 3, 5, 7, 9])) */
 // !
-function timeConversion(s) {
+/* function timeConversion(s) {
   // Write your code here
 
   let arr = s.split(':')
 
   // return arr.map((e, index) => index)
 }
-console.log(timeConversion('13:05:45AM'))
+console.log(timeConversion('13:05:45AM')) */
+// !
+/* function matchingStrings(strings, queries) {
+  // Write your code here
+  // *  check every query if it is present in strings array
+  // * how many times it is present
+  // * return times present in an array
+
+  return queries.map((q) => strings.filter((s) => s === q).length)
+}
+console.log(matchingStrings(['ab', 'ab', 'abc'], ['ab', 'abc', 'bc'])) */
+// !
+function lonelyInteger(a) {
+  //todo Algo
+  // check for each element if it is present at another index
+  // Return element if it is not present at other instance
+  //todo code here
+  return a.filter((e) => a.indexOf(e) === a.lastIndexOf(e)).join('')
+}
+console.log(lonelyInteger([1, 2, 3, 4, 3, 2, 1]))

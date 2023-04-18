@@ -374,7 +374,8 @@ console.log(spinWords('Just kidding there is still one more')) */
 // !
 function findOdd(A) {
   //happy coding!
-  let newArr = []
-  return newArr
+  // * Algo
+  //
+  return 0
 }
 console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]))
