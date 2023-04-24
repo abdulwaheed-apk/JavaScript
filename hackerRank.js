@@ -73,7 +73,7 @@ console.log(timeConversion('13:05:45AM')) */
 }
 console.log(matchingStrings(['ab', 'ab', 'abc'], ['ab', 'abc', 'bc'])) */
 // !
-function lonelyInteger(a) {
+/* function lonelyInteger(a) {
   //todo Algo
   // check for each element if it is present at another index
   // Return element if it is not present at other instance
@@ -81,3 +81,25 @@ function lonelyInteger(a) {
   return a.filter((e) => a.indexOf(e) === a.lastIndexOf(e)).join('')
 }
 console.log(lonelyInteger([1, 2, 3, 4, 3, 2, 1]))
+ */
+// !
+let main = [[3], [11, 2, 4], [4, 5, 6], [10, 8, -12]]
+function diagonalDifference(arr) {
+  // todo solution 1
+  let result
+  let leftToRight = []
+  let rightToLeft = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.length !== arr[i].length) return (result = 'Not Square Matrix')
+    else {
+      let last = arr[i].length - 1
+      leftToRight.push(arr[i][i])
+      rightToLeft.push(arr[i][last - i])
+    }
+  }
+  let LTR = leftToRight.reduce((prev, current) => (prev += current))
+  let RTL = rightToLeft.reduce((prev, current) => (prev += current))
+  result = Math.abs(LTR - RTL)
+  return result
+}
+console.log(diagonalDifference(main))
